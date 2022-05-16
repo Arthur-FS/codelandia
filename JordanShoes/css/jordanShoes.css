@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+
+:root {
+    --bgSite: #f6f6f6;
+    --bgCard: #ebe9ea;
+    
+    --white: #fff;
+
+    --font: "Montserrat", sans-serif;
+  
+    --title: #181818;
+    --text: #474747;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+html {
+    font-size: 62.5%;
+    color: var(--text);
+}
+
+body {
+    font-size: 1.6rem;
+    color: var(--bgSite);
+    font-family: var(--font);
+}
+
+img {
+    width: 200px;
+    max-width: 100%;
+    height: 100%;
+    display: block;
+}
+
+main {
+    padding: 3rem 0;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7vh;
+    color: var(--title);
+}   
+
+.header-content {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./../img/wallpaper.jpeg);
+    background-position: center;
+    width: 100%;
+    height: 50vh;
+    /* opacity: 0.8; */
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header-title {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 0 3rem;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-start;
+    color: var(--bgCard);
+    gap: 2rem;
+}
+
+.container-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    padding: 2rem;
+    color: var(--title);
+}
+
+.container-sneakers {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 30px;
+    padding: 3rem 6rem;
+}
+
+.item-sneakers {
+    position: relative;
+    background-color: var(--bgCard);
+}
+
+.item-sneakers .img-sneakers {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+footer p {
+    background-color: var(--title);
+    height: 5vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
