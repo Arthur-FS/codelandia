@@ -75,7 +75,7 @@ main {
 }
 
 .header-title p::after {
-    content: '|';
+    content: '';
     position: relative;
     opacity: 1;
     animation: piscar .5s infinite;
@@ -122,7 +122,8 @@ main {
 .item-sneakers img:hover {
     transform: scale(1.2);  /*efeito de zoom na imagem*/
     transition: 1s all ease; /*delay do efeito*/
-    background-color: var(--title);
+    /* background-color: var(--title); */
+    cursor: pointer;
 }
 
 footer p {
